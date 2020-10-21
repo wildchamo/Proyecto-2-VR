@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Proyecto2</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> 
     <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script> 
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
@@ -19,7 +19,17 @@
 
         <a-camera position="-3 1 0" ></a-camera>
 
-        <a-sphere position="4 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000" color="yellow"></a-sphere>
+        <a-sphere id="sol" position="1 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000" color="yellow" scale="2 2 2">
+            <a-sphere id="mama1" position="2 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000" scale="1.5 1.5 1.5">
+                <a-sphere position="3 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000"></a-sphere>
+            </a-sphere>
+            <a-sphere id="mama2" position="5 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000" scale="1.5 1.5 1.5">
+                <a-sphere position="6 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000"></a-sphere>
+            </a-sphere>
+            <a-sphere id="mama3" position="8 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000" scale="1.5 1.5 1.5">
+                <a-sphere position="9 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000"></a-sphere>
+            </a-sphere>
+        </a-sphere>
 
     </a-scene>
     
