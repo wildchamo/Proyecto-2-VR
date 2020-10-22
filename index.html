@@ -2,27 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="ar-demo">
     <title>Proyecto2</title>
     <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script> 
-    <script src="https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js"></script> 
-    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 </head>
+
 <body>
-
-    <a-scene embedded arjs>
-        <a-assets>
-        <img  id="texturaSol" src="texturasplanetas/sol.jpg" >
-        <img  id="texturaTierra" src="texturasplanetas/tierra.jpg" >
-        <img  id="texturaMercury" src="texturasplanetas/mercury.jpg" >
-        <img  id="texturaNeptuno" src="texturasplanetas/neptuno.jpg" >
-        </a-assets>
-
-
-        <a-sphere  src="#texturaSol" id="sol" position="1 1 1" animation="property:rotation;to:0 360 0; loop:true;dur:10000">
-        </a-sphere>
-        <a-marker-camera preset='hiro'></a-marker-camera>
+    <a-scene >
+        <a-sphere id="solecito" scale=".2 .2 .2" color="yellow" radius="3" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+            <a-sphere position="4 0 0" scale="1 1 1" color="mediumseagreen"></a-sphere>
+        </a-sphere> 
+        <a-sphere id="solecito" scale=".2 .2 .2" color="yellow" radius="1" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000">
+            <a-sphere position="6 0 0" scale="1 1 1" color="red"></a-sphere>
+        </a-sphere>  
+        <a-sphere id="solecito" scale=".2 .2 .2" color="yellow" radius="1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+            <a-sphere position="8 0 8" scale="1 1 1" color="blue"></a-sphere>
+        </a-sphere>   
     </a-scene>
-    
 </body>
 </html>
