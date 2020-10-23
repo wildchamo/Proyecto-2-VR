@@ -11,11 +11,14 @@
 
 <body >
     <a-scene embedded arjs >
+        <a-marker-camera type='pattern' url='patts/pattern-marker.patt'>
         <a-sphere id="solecito" scale=".2 .2 .2" color="yellow" radius="3" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
             <a-sphere position="4 0 0" scale="1 1 1" color="mediumseagreen">
 
             </a-sphere>
         </a-sphere> 
+    </a-marker-camera>
+    <a-marker-camera preset='hiro'>
         <a-sphere id="solecito" scale=".2 .2 .2" color="yellow" radius="1" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000">
             <a-sphere position="7 0 0" scale="1 1 1" color="red" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000">
                 <a-sphere position="-1 0 1" scale=".5 .5 .5" color="purple"></a-sphere>
@@ -27,7 +30,8 @@
 
             </a-sphere>
         </a-sphere>   
-            <a-marker-camera preset='hiro'></a-marker-camera>
+    </a-marker-camera>
+    <a-entity camera></a-entity>
     </a-scene>
 
 </body>
