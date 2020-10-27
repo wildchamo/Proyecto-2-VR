@@ -30,22 +30,27 @@
 
         </a-assets>  
 
-        <a-sphere src="#texturaSol" normal-map="#texturaSolnormal"  id="solecito" scale=".2 .2 .2" color="yellow" radius="3" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
-            <a-sphere position="4 0 0" scale="1 1 1" src="#texturaluna2" normal-map="#texturaluna2normal"></a-sphere>
+        <a-sphere src="#texturaSol" normal-map="#texturaSolnormal"  id="solecito" scale=".2 .2 .2"  radius="3" animation="property: rotation; to: 0 360 0; loop: true; dur: 15000">
+
+  
+
+        <a-sphere id="tierra"  radius="1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+            <a-sphere position="5 0 0" scale="1 1 1" src="#texturaTierra" normal-map="#texturaTierranormal" animation="property: rotation; to: 0 360 0; loop: true; dur: 8000"> </a-sphere>
+        </a-sphere>  
+
+        <a-sphere id="0"   radius="1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
+            <a-sphere position="7 0 5" scale="1.5 1.5 1.5"src="#textura0" normal-map="#textura0normal"  animation="property: rotation; to: 0 360 0; loop: true; dur: 10000"></a-sphere>
         </a-sphere> 
+         
+        <a-sphere id="juputer" position="14 0 5" src="#texturajupiter" normal-map="#texturajupiternormal"   radius="2" animation="property: rotation; to: 0 -360 0; loop: true; dur: 15000">
+            <a-sphere position="1 1 3" scale=".5 .5 .5"src="#texturaluna1" normal-map="#texturaluna1normal"  animation="property: position;juputer; to: 0 360 0; dur: 1000; easing: linear; loop: true"></a-sphere>
 
-        <a-sphere id="solecito"  scale=".2 .2 .2" color="yellow" radius="1" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000">
-            <a-sphere position="6 0 0" scale="1 1 1" src="#texturaTierra" normal-map="#texturaTierranormal"></a-sphere>
-        </a-sphere>  
+            <a-sphere position="1 2 2" scale=".5 .5 .5"src="#texturaluna2" normal-map="#texturaluna2normal" animation="property: position;juputer to:0 -360 0; dur: 1000; easing: linear; loop: true" ></a-sphere>
+        </a-sphere>
+        
+    </a-sphere> 
 
-        <a-sphere id="solecito"  scale=".3 .3 .3" color="yellow" radius="1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
-            <a-sphere position="8 0 10" scale="1 1 1"src="#textura0" normal-map="#textura0normal"></a-sphere>
-        </a-sphere>  
-        <a-sphere id="solecito"  scale=".4 .4 .4" color="yellow" radius="1" animation="property: rotation; to: 0 360 0; loop: true; dur: 10000">
-            <a-sphere position="8 0 15" scale="1 1 1"src="#texturajupiter" normal-map="#texturajupiternormal" radius="3" animation="property: rotation; to: 0 -360 0; loop: true; dur: 10000"></a-sphere>
-        </a-sphere>  
-        
-        
     </a-scene>
+    
 </body>
 </html>
